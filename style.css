@@ -1,5 +1,10 @@
 h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: bold;
-   text-align: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
