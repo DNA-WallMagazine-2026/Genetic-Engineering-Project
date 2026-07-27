@@ -3,13 +3,12 @@ h1 {
   font-family: 'Comfortaa', Arial, sans-serif;
   font-weight: bold;
   text-align: center;
-  color: #000; 
 }
 
 h2 {
   font-family: 'Share Tech', Arial, sans-serif; /* Fix: Space instead of + */
   text-align: center;
-  color: #000;
+
 }
 
 header {
