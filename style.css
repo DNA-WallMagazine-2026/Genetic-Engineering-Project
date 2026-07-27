@@ -21,12 +21,11 @@ header {
 header h1 {
   color: #87e7fd;
   font-family: 'Comfortaa', sans-serif;
-   font-weight: bold;
+  font-weight: bold;
   text-align: center;
 }
 header h2 {
-   color: #87e7fd;
- font-family: 'Share Tech', Arial, sans-serif;
+  color: #87e7fd;
+  font-family: 'Share Tech', Arial, sans-serif;
   text-align: center;
 }
-
