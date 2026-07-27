@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+
 h1 {
-  font-family: Arial, sans-serif;
+  font-family: 'Comfortaa', Arial;
   font-weight: bold;
   text-align: center;
 }
