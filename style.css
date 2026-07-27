@@ -7,7 +7,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Share Tech', Arial, sans-serif; /* Fix: Space instead of + */
+  font-family: 'Share Tech', Arial, sans-serif;
   text-align: center;
   font-size: clamp(1.62rem, 4.5vw, 2.7rem);
 }
