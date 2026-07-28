@@ -54,3 +54,11 @@ header h2 {
 body {
   background-color: #c1e1ec;
 }
+.feature {
+  background-color: #FFFFFF;
+  margin: 2em auto;
+  padding: 1.5em;
+  border-radius: 14px;
+  width: 85%;
+  box-shadow: 0 0 12px rgba(185, 165, 201, 0.25);
+}
