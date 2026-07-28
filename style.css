@@ -51,3 +51,6 @@ header h2 {
   border: 2px solid#75d9f0;
   flex: 1;
 }
+body {
+  background-color: #ccecf0;
+}
