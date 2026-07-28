@@ -11,7 +11,7 @@ h2 {
   text-align: center;
   font-size: clamp(1.62rem, 4.5vw, 2.7rem);
 }
-item a {
+a {
   color: :#6d8fe;
   margin-top: 0;
   font-weight: 600;
