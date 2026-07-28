@@ -11,12 +11,14 @@ h2 {
   text-align: center;
   font-size: clamp(1.62rem, 4.5vw, 2.7rem);
 }
+
 a {
-  color: :#6d8fe;
+ font-family: 'Comfortaa', Arial, sans-serif;
+  color:#3f69d5;
   margin-top: 0;
   font-weight: 600;
     display: block; 
-  text-align: center;  
+  text-align: center;
 }
 
 header {
@@ -46,6 +48,6 @@ header h2 {
 .item {
   padding: 10px;
   background-color: #f9f9f1;
-  border: 1px solid #f9f9f1;
+  border: 2px solid #e5c3de;
   flex: 1;
 }
