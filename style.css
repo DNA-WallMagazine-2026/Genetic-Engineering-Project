@@ -63,14 +63,26 @@ nav a:hover{
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:30px;
 }
-
+h2 {  margin: 0 0 20px;
+    color: #5c87ad;
+    border-bottom: 2px solid #d5a5d1;
+    padding-bottom: 8px;
+    font-size: 1.3rem;
+    text-decoration: none;
+         }
 .card{
     background:#d8f7f8;
     border-radius:22px;
     padding:22px;
 }
 
-.card h2, 
+.card h2 {  margin: 0 0 20px;
+    color: #5c87ad;
+    border-bottom: 2px solid #d5a5d1;
+    padding-bottom: 8px;
+    font-size: 1.3rem;
+    text-decoration: none;
+         }
 .card h2 a {
     margin: 0 0 20px;
     color: #5c87ad;
