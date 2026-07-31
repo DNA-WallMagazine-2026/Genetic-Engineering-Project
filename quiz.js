@@ -17,15 +17,15 @@ const questions = [
         ],
         answer: 0
     },
-   {
-    question: "DNA is passed from...",
-    choices: [
-        "Parents to children",
-        "Friends to friends",
-        "Children to their parents"
-    ],
-    answer: 0
-}
+    {
+        question: "DNA is passed from...",
+        choices: [
+            "Parents to children",
+            "Friends to friends",
+            "Children to their parents"
+        ],
+        answer: 0
+    },
     {
         question: "What shape is DNA?",
         choices: [
@@ -35,38 +35,48 @@ const questions = [
         ],
         answer: 1
     },
-{
-    question: "Which of these is controlled by DNA?",
-    choices: [
-        "Physical Appearance",
-        "Favorite sport",
-        "Phone number"
-    ],
-    answer: 0
-}
+    {
+        question: "Which of these is controlled by DNA?",
+        choices: [
+            "Physical appearance",
+            "Favorite sport",
+            "Phone number"
+        ],
+        answer: 0
+    }
 ];
 
 function startQuiz() {
     let score = 0;
 
-    for (let i = 0; i < questions.length; i++) {
-        let q = questions[i];
-
+    for (const q of questions) {
         let message = `${q.question}\n\n`;
 
-        for (let j = 0; j < q.choices.length; j++) {
-            message += `${j + 1}. ${q.choices[j]}\n`;
+        q.choices.forEach((choice, index) => {
+            message += `${index + 1}. ${choice}\n`;
+        });
+
+        const input = prompt(message);
+
+        // User pressed Cancel
+        if (input === null) {
+            alert("Quiz cancelled.");
+            return;
         }
 
-        let userAnswer = Number(prompt(message));
+        const userAnswer = Number(input);
 
-        if (userAnswer - 1 === q.answer) {
-            alert("✅ Correct!");
-            score++;
+        if (userAnswer >= 1 && userAnswer <= q.choices.length) {
+            if (userAnswer - 1 === q.answer) {
+                alert("✅ Correct!");
+                score++;
+            } else {
+                alert(`❌ Incorrect!\nCorrect answer: ${q.choices[q.answer]}`);
+            }
         } else {
-            alert(`❌ Incorrect!\nThe correct answer is: ${q.choices[q.answer]}`);
+            alert(`⚠️ Please enter 1, 2, or 3.\nCorrect answer: ${q.choices[q.answer]}`);
         }
     }
 
-    alert(`🎉 Quiz Complete!\nYou scored ${score} out of ${questions.length}!`);
+    alert(`🎉 Quiz Complete!\n\nYour score: ${score}/${questions.length}`);
 }
