@@ -17,15 +17,15 @@ const questions = [
         ],
         answer: 0
     },
-    {
-        question: "Which pair of DNA bases go together?",
-        choices: [
-            "Adenine and Cytosine",
-            "Adenine and Thymine",
-            "Guanine and Thymine"
-        ],
-        answer: 1
-    },
+   {
+    question: "DNA is passed from...",
+    choices: [
+        "Parents to children",
+        "Friends to friends",
+        "Children to their parents"
+    ],
+    answer: 0
+}
     {
         question: "What shape is DNA?",
         choices: [
@@ -35,15 +35,15 @@ const questions = [
         ],
         answer: 1
     },
-    {
-        question: "Which of these is NOT a DNA base?",
-        choices: [
-            "Guanine",
-            "Uracil",
-            "Thymine"
-        ],
-        answer: 1
-    }
+{
+    question: "Which of these is controlled by DNA?",
+    choices: [
+        "Physical Appearance",
+        "Favorite sport",
+        "Phone number"
+    ],
+    answer: 0
+}
 ];
 
 function startQuiz() {
@@ -53,6 +53,7 @@ function startQuiz() {
         let q = questions[i];
 
         let message = `${q.question}\n\n`;
+
         for (let j = 0; j < q.choices.length; j++) {
             message += `${j + 1}. ${q.choices[j]}\n`;
         }
@@ -60,9 +61,12 @@ function startQuiz() {
         let userAnswer = Number(prompt(message));
 
         if (userAnswer - 1 === q.answer) {
+            alert("✅ Correct!");
             score++;
+        } else {
+            alert(`❌ Incorrect!\nThe correct answer is: ${q.choices[q.answer]}`);
         }
     }
 
-    alert(`Quiz Complete!\nYou scored ${score}/${questions.length}!`);
+    alert(`🎉 Quiz Complete!\nYou scored ${score} out of ${questions.length}!`);
 }
