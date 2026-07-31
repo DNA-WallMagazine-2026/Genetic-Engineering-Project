@@ -78,6 +78,20 @@ nav a:hover{
     font-size:1.3rem;
 }
 
+.card h2 a{
+    margin:0 0 20px;
+    color:#5c87ad;
+    border-bottom:2px solid #d5a5d1;
+    padding-bottom:8px;
+    font-size:1.3rem;
+}
+.card h2 hover {
+    margin:0 0 20px;
+    color:#ffffff;
+    border-bottom:2px solid #d5a5d1;
+    padding-bottom:8px;
+    font-size:1.3rem;
+}
 .card h3{
     color:#0b93a8;
     margin:20px 0 10px;
